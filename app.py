@@ -2,7 +2,6 @@ import streamlit as st
 import json
 import re
 import os
-import sniffio
 from dotenv import load_dotenv
 from zhipuai import ZhipuAI
 
@@ -110,3 +109,4 @@ if generate_btn:
         else:
 
             st.error("❌ 解析失败，请重试")
+
