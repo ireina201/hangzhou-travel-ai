@@ -2,6 +2,7 @@ import streamlit as st
 import json
 import re
 import os
+import sniffio
 from dotenv import load_dotenv
 from zhipuai import ZhipuAI
 
@@ -107,4 +108,5 @@ if generate_btn:
                     st.write(f"**地点**：{location}")
                     st.write(f"**理由**：{reason}")
         else:
+
             st.error("❌ 解析失败，请重试")
